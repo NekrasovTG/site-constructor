@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конструктор Лендингов</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="sidebar blocks-panel">
+      <div class="panel-header">
+        <h3><i class="fas fa-cubes"></i> Блоки</h3>
+      </div>
+      <div class="blocks-list">
+        <div class="block-category">
+          <h4>Шапка и Навигация</h4>
+          <div class="block-item" draggable="true" data-block-type="header">
+            <i class="fas fa-bars"></i>
+            <span>Header</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="navbar">
+            <i class="fas fa-stream"></i>
+            <span>Navbar</span>
+          </div>
+        </div>
+
+        <div class="block-category">
+          <h4>Герои</h4>
+          <div class="block-item" draggable="true" data-block-type="hero">
+            <i class="fas fa-image"></i>
+            <span>Hero Banner</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="hero-video">
+            <i class="fas fa-video"></i>
+            <span>Hero Video</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="hero-split">
+            <i class="fas fa-columns"></i>
+            <span>Hero Split</span>
+          </div>
+        </div>
+
+        <div class="block-category">
+          <h4>Контент</h4>
+          <div class="block-item" draggable="true" data-block-type="features">
+            <i class="fas fa-star"></i>
+            <span>Features</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="features-grid">
+            <i class="fas fa-th"></i>
+            <span>Features Grid</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="about">
+            <i class="fas fa-info-circle"></i>
+            <span>About</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="stats">
+            <i class="fas fa-chart-bar"></i>
+            <span>Statistics</span>
+          </div>
+        </div>
+
+        <div class="block-category">
+          <h4>Отзывы и Команда</h4>
+          <div class="block-item" draggable="true" data-block-type="testimonials">
+            <i class="fas fa-quote-left"></i>
+            <span>Testimonials</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="team">
+            <i class="fas fa-users"></i>
+            <span>Team</span>
+          </div>
+        </div>
+
+        <div class="block-category">
+          <h4>Цены и CTA</h4>
+          <div class="block-item" draggable="true" data-block-type="pricing">
+            <i class="fas fa-tags"></i>
+            <span>Pricing</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="cta">
+            <i class="fas fa-bullhorn"></i>
+            <span>Call to Action</span>
+          </div>
+        </div>
+
+        <div class="block-category">
+          <h4>Формы</h4>
+          <div class="block-item" draggable="true" data-block-type="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact Form</span>
+          </div>
+          <div class="block-item" draggable="true" data-block-type="newsletter">
+            <i class="fas fa-paper-plane"></i>
+            <span>Newsletter</span>
+          </div>
+        </div>
+
+        <div class="block-category">
+          <h4>Футер</h4>
+          <div class="block-item" draggable="true" data-block-type="footer">
+            <i class="fas fa-shoe-prints"></i>
+            <span>Footer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <h2><i class="fas fa-rocket"></i> Конструктор Лендингов</h2>
+        </div>
+        <div class="toolbar-right">
+          <button class="btn btn-secondary" id="clearBtn">
+            <i class="fas fa-trash"></i> Очистить
+          </button>
+          <button class="btn btn-primary" id="exportBtn">
+            <i class="fas fa-download"></i> Экспорт HTML/CSS
+          </button>
+        </div>
+      </div>
+      <div class="canvas" id="canvas">
+        <div class="canvas-placeholder">
+          <i class="fas fa-mouse-pointer"></i>
+          <p>Перетащите блоки сюда, чтобы начать создание лендинга</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar settings-panel">
+      <div class="panel-header">
+        <h3><i class="fas fa-cog"></i> Настройки</h3>
+      </div>
+      <div class="settings-content" id="settingsContent">
+        <div class="no-selection">
+          <i class="fas fa-hand-pointer"></i>
+          <p>Выберите блок для редактирования</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
